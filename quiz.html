@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quiz-style.css" />
+    <title>Quiz Application</title>
+  </head>
+  <body>
+    <section>
+      <div class="intro" id="show">
+        <h1>Welcome to Geo quiz</h1>
+        <h2>Click here to start</h2>
+        <button class="start" id="start-btn" onclick="goToQuizPage()">
+          Start
+        </button>
+      </div>
+      <div class="container" id="container-hide">
+        <div class="quiz-container">
+          <div class="question">
+            1. Which is the smallest country in the world?
+          </div>
+
+          <div class="answer">
+            <div id="correct-answer" onclick="addScore(event)">
+              Vatican City
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Thailand
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Myanmmar
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Maldives
+            </div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            2. In which city would you find the world's tallest building?
+          </div>
+
+          <div class="answer">
+            <div id="correct-answer" onclick="addScore(event)">Dubai</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Shanghai
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              New York City
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Taipei
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-container">
+          <div class="question">
+            3. With an average altitude of 1.6 miles, what is the highest
+            continent?
+          </div>
+
+          <div class="answer">
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              North America
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Europe
+            </div>
+            <div id="correct-answer" onclick="addScore(event)">Antartica</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">Asia</div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            4. Located northeast of Papua New Guinea, what is the world's
+            smallest island nation?
+          </div>
+
+          <div class="answer">
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Barbados
+            </div>
+            <div id="correct-answer" onclick="addScore(event)">Nauru</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Malta
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Maldives
+            </div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            5. Located near Lake Titicaca, what is the world's highest national
+            capital?
+          </div>
+
+          <div class="answer">
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Katmandu,Nepal
+            </div>
+            <div id="correct-answer" onclick="addScore(event)">
+              La Paz,Bolivia
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              bern, Switzerland
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Addis Ababa,Ethiopia
+            </div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            6. In which country are the world's 10 coldest cities located??
+          </div>
+
+          <div class="answer">
+            <div id="correct-answer" onclick="addScore(event)">Russia</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer()">Sweeden</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Canada
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              United States
+            </div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            7. Which country has three capital cities—Pretoria, Cape Town, and
+            Bloemfontein?
+          </div>
+
+          <div class="answer">
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Nigeria
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Chile
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Australia
+            </div>
+            <div id="correct-answer" onclick="addScore(event)">
+              South Africa
+            </div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            8. Which continent is home to the most countries?
+          </div>
+
+          <div class="answer">
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Europe
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              South America
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">Asia</div>
+            <div id="correct-answer" onclick="addScore(event)">Africa</div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            9. Which of these is NOT one of the 13 countries crossed by the
+            Equator?
+          </div>
+
+          <div class="answer">
+            <div id="correct-answer" onclick="addScore(event)">Egypt</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Indonesia
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Kenya
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Equador
+            </div>
+          </div>
+        </div>
+        <div class="quiz-container">
+          <div class="question">
+            10. Thanks to its overseas territories, which country technically
+            spans 12 time zones?
+          </div>
+
+          <div class="answer">
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              Russia
+            </div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              United States
+            </div>
+            <div id="correct-answer" onclick="addScore(event)">France</div>
+            <div id="wrong-answer" onclick="handleWrongAnswer(event)">
+              China
+            </div>
+          </div>
+        </div>
+        <button class="submit" id="submit-hide" onclick="showScore()">
+          Submit
+        </button>
+      </div>
+      <div class="scores-container" id="score-hide">
+        <h2>Congratulations! You finished the quiz successfully</h2>
+        <h1 id="score">Your Score:</h1>
+        <h1 id="percentage-score">Percentage of Score:</h1>
+        <button onclick="retakeQuiz()">Retake</button>
+      </div>
+    </section>
+    <script type="text/javascript" src="quiz-functions.js"></script>
+  </body>
+</html>
